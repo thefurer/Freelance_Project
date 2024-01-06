@@ -7,10 +7,112 @@
     <title>Freelance</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-    <h1>hola mundo</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">fiverr.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Explorar -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Explorar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="explorarDropdown">
+                        <a class="dropdown-item" href="#">Opción 1</a>
+                        <a class="dropdown-item" href="#">Opción 2</a>
+                        <a class="dropdown-item" href="#">Opción 3</a>
+                    </div>
+                </li>
+    
+                <!-- Ingles -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ingles</a>
+                </li>
+    
+                <!-- Soluciones empresariales en el lado derecho -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="solucionesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Soluciones empresariales
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="solucionesDropdown">
+                        <a class="dropdown-item" href="#">Opción 1</a>
+                        <a class="dropdown-item" href="#">Opción 2</a>
+                        <a class="dropdown-item" href="#">Opción 3</a>
+                    </div>
+                </li>
+    
+                <!-- Conviértete en vendedor -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conviértete en vendedor</a>
+                </li>
+    
+                <!-- Iniciar Sesión -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Iniciar Sesión</a>
+                </li>
+            </ul>
+    
+            <!-- Botón de adjuntar -->
+            <form class="form-inline">
+                <button class="btn btn-outline-success" type="button">Adjuntar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1>ㅤ</h1>
+        <h1>ㅤ</h1> 
+        <h1>ㅤ</h1> 
+    </div>
+
+    <div class="container mt-4 text-white p-2">
+        <h1>Encuentra el servicio</h1>
+        <h1>freelance adecuado de</h1> 
+        <h1>inmediato</h1>
+    </div>
+    
+    <!-- Barra de búsqueda -->
+    <div class="container mt-4">
+        <form class="form-inline">
+            <input class="form-control mr-2" type="search" placeholder="Buscar" aria-label="Buscar" style="width: 35%;">
+            <div class="input-group-append">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <i class="fas fa-search"></i> <!-- Icono de lupa -->
+            </button>
+        </form>
+    </div>
+    <div class="container mt-4 text-white p-0.5">
+        <div class="d-flex">
+            <h5>Popular:ㅤ</h5>
+            <label class="btn btn-outline-secondary text-white">Diseño de sitios web</label>
+            <label class="btn btn-outline-secondary text-white">WordPress (en ingles)</label>
+            <label class="btn btn-outline-secondary text-white">Diseño del logo</label>
+            <label class="btn btn-outline-secondary text-white">Servicios de IA</label>
+        </div>
+    </div>
+</div>
+    <div class="container mt-4">
+        <h1>ㅤ</h1>
+        <h1>ㅤ</h1> 
+        <h1>ㅤ</h1> 
+    </div>
+    
+    <!-- Enlace al archivo JavaScript de Bootstrap (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo",window.scrollY>0);
+		})
+	</script>
+    
 
 </body>
 
