@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -66,85 +70,110 @@
         </nav>
     </header>
     
-    <section class="custom-section" style="background-image: url('img/im2.png');">
-        <div class="container mt-4">
-            <h1>Encuentra el servicio freelance adecuado de inmediato</h1> 
-        </div>
-        
-        <!-- Barra de búsqueda -->
-        <div class="container mt-4">
-            <form class="form-inline">
-                <div class="input-group">
-                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar" style="width: 55%;">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-success" type="submit">
-                            <i class="fas fa-search"></i> <!-- Icono de lupa -->
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="container mt-4">
-            <div class="d-flex">
-                <h5>Popular:ㅤ</h5>
-                <label class="btn btn-primary text-white hover-effect" style="background-color: rgb(18, 21, 27); border: none; margin-right: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Diseño de sitios web</label>
-                <label class="btn btn-success text-white hover-effect" style="background-color: rgb(18, 21, 27); border: none; margin-right: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Airnet (en ingles)</label>
-                <label class="btn btn-info text-white hover-effect" style="background-color: rgb(18, 21, 27); border: none; margin-right: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Capacítate</label>
-                <label class="btn btn-warning text-white hover-effect" style="background-color: rgb(18, 21, 27); border: none; margin-right: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Sobre nosotros</label>
-            </div>
-        </div>
-    </section>
+    <main>
+
+        <!--
+          - #HERO SECTIONs
+        -->
     
-    <section>
-        <div class="container mt-4">
-            <h1>Nuestro Equipo</h1> 
+        <div class="hero" style="background-image: url('/img/wallhaven-ox3pkl.jpg');">
+
+            <div class="container">
+
+                <div class="left">
+
+                <h1 style="font-size: 70px; color: hsl(172, 59%, 54%);">
+                        <strong>BIENVENIDO A FREELANCERS</strong>
+                </h1>
+                <div class="container mt-4">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar" style="width: 55%; align-items: center;">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-success" type="submit">
+                                    <i class="fas fa-search"></i> <!-- Icono de lupa -->
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                    <p style="font-size: 20px; color: white;">
+                        Encuentra el servicio freelance adecuado de inmediato
+                    </p>
+
+                <div class="btn-group">
+                        <a href="#" class="btn btn-primary" style="border-radius: 20px;">Empezar ahora</a>
+                        <a href="#" class="btn btn-secondary" style="border-radius: 20px;">Sobre Nosotros</a>
+                </div>
+
+                </div>
+
+                <div class="right">
+
+                    <div class="pattern-bg"></div>
+                    <div class="img-box">
+                        <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Julia Walker" class="hero-img" style="width: 120%;">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
         </div>
-        <div class="container">
-            <div class="box" style="--clr:#89ec5b;">
-                <div class="content">
-                    <div class="icon"><ion-icon name="brush"></ion-icon>
-                        <a href="#">
-                            <img src="img/im2.png alt="Agregar imagen" style="width: 70%;">
-                        </a>
+
+        <section class="team-section" style="background-color:hsl(0, 11%, 96%);">
+            <div class="container mt-4">
+                <h1>Nuestro Equipo</h1> 
+            </div>
+            <div class="container">
+                <div class="box" style="--clr:#89ec5b;">
+                    <div class="content">
+                        <div class="icon"><ion-icon name="brush"></ion-icon>
+                            <a href="#">
+                                <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Agregar imagen" style="width: 70%;">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3>Diseñador</h3>
+                            <p>Hola, mi nombre es Roberth Miranda y me gusta diseñar</p>
+                            <a href="#">Leer Más</a>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h3>Diseñador</h3>
-                        <p>Hola, mi nombre es Roberth Miranda y me gusta diseñar</p>
-                        <a href="#">Leer Más</a>
+                </div>
+                <div class="box" style="--clr:#eb5ae5;">
+                    <div class="content">
+                        <div class="icon"><ion-icon name="code-slash"></ion-icon>
+                            <a href="#">
+                                <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Agregar imagen" style="width: 70%;">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3>Desarrollador</h3>
+                            <p>Me llamo César y me gustan los retos</p>
+                            <a href="#">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" style="--clr:#5b98eb;">
+                    <div class="content">
+                        <div class="icon"><ion-icon name="search"></ion-icon>
+                            <a href="#">
+                                <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Agregar imagen" style="width: 70%;">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3>CEO</h3>
+                            <p>Hola que tal, soy Anyely Santana, líder y accionista </p>
+                            <a href="#">Leer Más</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box" style="--clr:#eb5ae5;">
-                <div class="content">
-                    <div class="icon"><ion-icon name="code-slash"></ion-icon>
-                        <a href="#">
-                            <img src="img/im2.png" alt="Agregar imagen" style="width: 70%;">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <h3>Desarrollador</h3>
-                        <p>Me llamo César y me gustan los retos</p>
-                        <a href="#">Leer Más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box" style="--clr:#5b98eb;">
-                <div class="content">
-                    <div class="icon"><ion-icon name="search"></ion-icon>
-                        <a href="#">
-                            <img src="img/im2.png" alt="Agregar imagen" style="width: 70%;">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <h3>SEO</h3>
-                        <p>Hola que tal, soy Anyely Santana, líder y accionista </p>
-                        <a href="#">Leer Más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        
+        </section>
+      </main>
 
     
 
