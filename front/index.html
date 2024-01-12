@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,13 +30,10 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="explorarDropdown">
                             <a class="dropdown-item" href="tuserviciosdisponibles.html" target="_blank">Servicios Disponibles</a>
-                            <a class="dropdown-item" href="Perfiles.html" target="_blank">>Perfiles Profesionales</a>
+                            <a class="dropdown-item" href="Perfiles.html" target="_blank">Perfiles Profesionales</a>
                         </div>
                     </li>
                       <!-- Ingles -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingles</a>
-                    </li>
         
                     <!-- Soluciones empresariales en el lado derecho -->
                     <li class="nav-item dropdown">
@@ -48,26 +42,24 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="solucionesDropdown">
                             <a class="dropdown-item" href="#">Opción 1</a>
-                            <a class="dropdown-item" href="#">Opción 2</a>
-                            <a class="dropdown-item" href="#">Opción 3</a>
+                           
                         </div>
                     </li>
         
-                    <!-- Conviértete en vendedor -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Conviértete en vendedor</a>
                     </li>
                     
                 </ul>
         
-                <!-- Botón de adjuntar -->
+                <!-- Botón de adjuntar 
                 <form class="form-inline">
                     <button class="btn btn-outline-success" type="button" style="border-color: hsl(166, 69%, 49%); color: white; border-radius: 10px;">Adjuntar CV</button>
                 </form>
+                -->
             </div>
         </nav>
     </header>
-    
     <main>
 
         <!--
@@ -80,30 +72,30 @@
 
                 <div class="left">
 
-                <h1 style="font-size: 70px; color: hsl(172, 59%, 54%);">
-                        <strong>BIENVENIDO A FREELANCERS</strong>
-                </h1>
-                <div class="container mt-4">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar" style="width: 55%; align-items: center;">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-success" type="submit">
-                                    <i class="fas fa-search"></i> <!-- Icono de lupa -->
-                                </button>
+                    <h1 style="font-size: 70px; color: hsl(188, 69%, 49%)">
+                            <strong>BIENVENIDO A FREELANCERS</strong>
+                    </h1>
+                    <div class="container mt-4">
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar" style="width: 55%; align-items: center;">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <i class="fas fa-search"></i> <!-- Icono de lupa -->
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
+                        </form>
+                    </div>
 
-                    <p style="font-size: 20px; color: white;">
-                        Encuentra el servicio freelance adecuado de inmediato
-                    </p>
+                        <p style="font-size: 20px; color: white;">
+                            Encuentra el servicio freelance adecuado de inmediato
+                        </p>
 
-                <div class="btn-group">
-                        <a href="#" class="btn btn-primary" style="border-radius: 20px;">Empezar ahora</a>
-                        <a href="#" class="btn btn-secondary" style="border-radius: 20px;">Sobre Nosotros</a>
-                </div>
+                    <div class="btn-group">
+                            <a href="/pages/login.html" class="unete" style="border-radius: 20px; text-decoration: none;">Empezar ahora</a>
+                            <a href="#our" class="unete" style="border-radius: 20px; text-decoration: none;">Sobre Nosotros</a>
+                    </div>
 
                 </div>
 
@@ -121,36 +113,207 @@
             </div>
 
         </div>
-
-        <section class="team-section" style="background-color:hsl(0, 11%, 96%);">
-            <div class="container mt-4">
+        <section id="recipes">
+            <div class="recipe-container">
+              <h1>Personal Disponible a Contratar</h1>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide post">
+                    <img class="post-img" src="https://octechnology.co/wp-content/uploads/2020/06/12.png" alt="recipe" />
+      
+                    <div class="post-body">
+                      <img
+                        class="post-avatar"
+                        src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/f9d29d0e-f03b-4990-9bc5-ade57a276b41"
+                        alt="avatar" />
+                      <div class="post-detail">
+                        <h2 class="post-name">Técnica de soporte</h2>
+                        <p class="post-author">Anyely Santana</p>
+                      </div>
+      
+                      <div class="post-actions">
+                        <a class="post-like" href="javascript:void(0)"
+                          ><i class="fas fa-heart"></i
+                        ></a>
+                        <button
+                          class="post-actions-controller"
+                          data-target="post1"
+                          aria-controls="post-actions-content"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                        </button>
+                        <div
+                          class="post-actions-content"
+                          id="post1"
+                          data-visible="false"
+                          aria-hidden="true">
+                          <ul role="list" class="grid-flow" data-spacing="small">
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <span>Agregar</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>Ver perfil</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>Seguir</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide post">
+                    <img class="post-img" src="https://image.freepik.com/vecteurs-libre/concept-developpement-applications-bureau-bureau_23-2148699345.jpg" alt="recipe" />
+      
+                    <div class="post-body">
+                      <img
+                        class="post-avatar"
+                        src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/3c7b6ef9-cd2d-4d70-819a-2aa9c2309083"
+                        alt="avatar" />
+                      <div class="post-detail">
+                        <h2 class="post-name">Programador de informática</h2>
+                        <p class="post-author">César Plaza</p>
+                      </div>
+      
+                      <div class="post-actions">
+                        <a class="post-like" href="javascript:void(0)"
+                          ><i class="fas fa-heart"></i
+                        ></a>
+                        <button
+                          class="post-actions-controller"
+                          data-target="post2"
+                          aria-controls="post-actions-content"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                        </button>
+                        <div
+                          class="post-actions-content"
+                          id="post2"
+                          data-visible="false"
+                          aria-hidden="true">
+                          <ul role="list" class="grid-flow" data-spacing="small">
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <span>Agregar</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>Ver perfil</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>Seguir</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide post">
+                    <img class="post-img" src="https://cdn.vectorstock.com/i/preview-1x/76/61/programmer-concept-4-isometric-compositions-vector-19937661.jpg" alt="recipe" />
+      
+                    <div class="post-body">
+                      <img
+                        class="post-avatar"
+                        src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/01332597-5aeb-483b-b682-9379c6ed8f14"
+                        alt="avatar" />
+                      <div class="post-detail">
+                        <h2 class="post-name">Ingeniera de sistemas</h2>
+                        <p class="post-author">Jeniffer Plúa</p>
+                      </div>
+      
+                      <div class="post-actions">
+                        <a class="post-like" href="javascript:void(0)"
+                          ><i class="fas fa-heart"></i
+                        ></a>
+                        <button
+                          class="post-actions-controller"
+                          data-target="post3"
+                          aria-controls="post-actions-content"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                        </button>
+                        <div
+                          class="post-actions-content"
+                          id="post3"
+                          data-visible="false"
+                          aria-hidden="true">
+                          <ul role="list" class="grid-flow" data-spacing="small">
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <span>Agregar</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>Ver pefil</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="post-actions-link" href="javascript:void(0)">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>Seguir</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+        </section>
+        <section class="team-section" style="background-color:hsl(0, 11%, 96%);" id="our">
+            <div class="team">
                 <h1>Nuestro Equipo</h1> 
             </div>
             <div class="container">
-                <div class="box" style="--clr:#89ec5b;">
-                    <div class="content">
-                        <div class="icon"><ion-icon name="brush"></ion-icon>
-                            <a href="#">
-                                <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Agregar imagen" style="width: 70%;">
-                            </a>
-                        </div>
-                        <div class="text">
-                            <h3>Diseñador</h3>
-                            <p>Hola, mi nombre es Roberth Miranda y me gusta diseñar</p>
-                            <a href="#">Leer Más</a>
+                <div class="container">
+                    <div class="box" style="--clr:#89ec5b;">
+                        <div class="content">
+                            <div class="icon"><ion-icon name="brush"></ion-icon>
+                                <a href="#">
+                                    <img src="/img/unknown.png" alt="Agregar imagen" style="width: 70%;">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h3>Diseñador</h3>
+                                <p>Hola, mi nombre es Roberth Miranda y me gusta diseñar</p>
+                                <a href="#">Leer Más</a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div class="box" style="--clr:#eb5ae5;">
                     <div class="content">
                         <div class="icon"><ion-icon name="code-slash"></ion-icon>
                             <a href="#">
-                                <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Agregar imagen" style="width: 70%;">
+                                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/3c7b6ef9-cd2d-4d70-819a-2aa9c2309083" alt="Agregar imagen" style="width: 70%;">
                             </a>
                         </div>
                         <div class="text">
                             <h3>Desarrollador</h3>
-                            <p>Me llamo César y me gustan los retos</p>
+                            <p>Me llamo Abel Castillo y me gustan los retos</p>
                             <a href="#">Leer Más</a>
                         </div>
                     </div>
@@ -159,7 +322,7 @@
                     <div class="content">
                         <div class="icon"><ion-icon name="search"></ion-icon>
                             <a href="#">
-                                <img src="/img/Blue_Gray_Modern_Technology_Logo-removebg-preview.png" alt="Agregar imagen" style="width: 70%;">
+                                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/01332597-5aeb-483b-b682-9379c6ed8f14" alt="Agregar imagen" style="width: 70%;">
                             </a>
                         </div>
                         <div class="text">
@@ -172,9 +335,6 @@
             </div>
         </section>
       </main>
-
-    
-
     <footer class="container-fluid">
         <div class="row">
             <div class="col">
@@ -228,6 +388,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script><script  src="/front/app.js"></script>
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
@@ -235,4 +397,5 @@
         })
     </script>
 </body>
+
 </html>
