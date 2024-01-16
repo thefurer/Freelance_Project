@@ -36,13 +36,62 @@ html {
 body {
 	font-family: 'Inter', sans-serif;
 	overflow-x: hidden;
-	background-color: rgb(13,19,41);
+	background-color: #0d142b;
 	font-weight: 400;
 	font-style: normal;
 	color: white;
 	font-size: var(--font_14)
 }
+.scroll {
+	display: block;
+	width: 100px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+   
+}
+.ds-slider-section,
+.ds-main-section {
+	padding: 5.8rem 0
+}
+.habilidades {
+	font-size: 18px;
+	padding-left: 28rem;
+}
 
+.center {
+	text-align: center;
+	text-shadow: 4px 7px 5px purple;
+}
+.perfiles {
+transition: all 0.3s ease-out;
+min-width: 100%;
+border-radius: 10px;
+display: flow-root;
+padding: 20px;
+box-shadow: 3px 2px 7px blueviolet, -3px -2px 7px hsl(271, 76%, 50%);
+outline: 0.5px solid hsla(0, 0%, 100%, 0.24);
+outline-offset: -1px;
+margin-bottom: 0.5rem;
+
+}
+.perfiles:hover {
+	opacity: 0.89;
+	cursor: pointer;
+}
+
+.img_perfil {
+	max-width: 400px;
+	height: auto;
+	float: left;
+	margin-right: 1.5rem;
+	border-radius: 5%;
+	
+
+}
+.ds-header .container .personalizado {
+	font-size: 2.4rem;
+}
 
 .ds-logo .title {
 	font-family: Arial, Helvetica, sans-serif;
@@ -156,7 +205,7 @@ img {
   1. >>> Headr Style
 ----------------------------------------------------------------*/
 .ds-header {
-	padding-top: 3.75rem;
+	padding-top: 2.5rem;
 	text-align: center;
 	position: relative;
 }
@@ -230,10 +279,7 @@ img {
 	opacity: 1
 }
 
-.ds-slider-section,
-.ds-main-section {
-	padding: 7.5rem 0
-}
+
 .ds-slider-section {
 	padding: 3.5rem 0;
 }
@@ -379,7 +425,7 @@ img {
 	margin-bottom: 2.5rem
 }
 
-.ds-project-section section {
+.ds-project-section {
 	position: sticky;
 	top: 0;
 	padding-top: 10px;
