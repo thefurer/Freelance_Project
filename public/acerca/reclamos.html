@@ -6,17 +6,18 @@
     <title>Reclamos de Propiedad Intelectual</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #17202A;
+            color: #fff;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #17202A;
             padding: 1em;
             text-align: center;
+            color: #fff;
         }
 
         section {
@@ -24,12 +25,18 @@
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            color: #fff;
         }
 
-        h2 {
-            color: #333;
+        h1, h2 {
+            color: #17202A;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #000000;
         }
 
         form {
@@ -39,28 +46,35 @@
 
         label {
             margin-bottom: 8px;
+            color: #000000;
         }
 
         input, textarea {
             margin-bottom: 16px;
-            padding: 8px;
-            border: 1px solid #ccc;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
             border-radius: 4px;
         }
 
         button {
-            padding: 10px;
-            background-color: #333;
+            padding: 12px;
+            background-color: #3498db;
             color: #fff;
             border: none;
             cursor: pointer;
         }
 
+        button:hover {
+            background-color: #2980b9;
+        }
+
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #3498db;
             padding: 1em;
             text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+            color: #fff;
         }
     </style>
 </head>
@@ -71,11 +85,16 @@
     </header>
 
     <section>
-        <form action="procesar_reclamo.php" method="post">
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+        <p>Si cree que sus derechos de propiedad intelectual han sido violados, por favor, complete el siguiente formulario de reclamo y nos pondremos en contacto con usted lo antes posible.</p>
 
-            <label for="mensaje">Mensaje de Reclamo:</label>
+        <form action="procesar_reclamo.php" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Descripción del reclamo:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
             <button type="submit">Enviar Reclamo</button>
@@ -88,3 +107,4 @@
 
 </body>
 </html>
+
