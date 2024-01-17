@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--fs-base); /* base font-size (0.85rem = 13.6px) */
+    line-height: 1.8;
+}
+
+.unete {
+    transition: all 0.5s ease-in-out;
+    background: transparent;
+    border: 3px solid hsl(188, 69%, 49%);
+    color: white;
+    border-radius: 7rem;
+    padding: 0.3rem 0.9rem;
+    
+}
+.unete:hover {
+    background-color: hsl(188, 69%, 49%);
+    color: black;
+}
+.container-fluid {
+    background-color: rgb(18, 21, 27);
+    color: white;
+}
+
+.titulos {
+    color: white;
+}
+
+.list {
+    list-style: none;
+    color: white;
+    padding-left: 0;
+
+}
+.row {
+    padding: 20px 0 0 20px;
+    background-color: rgb(33, 37, 41);
+    opacity: 0.9;
+    border-radius: 0.7rem;
+   
+}
+.col-10 {
+    
+    margin-bottom: 20px;
+    height: 35px;
+}
+.col-2 {
+    margin: 0;
+    height: 35px;
+}
+
+nav .navbar-brand {
+    margin-left: 1rem;
+}
+
+.navbar-nav {
+    padding: 0.5rem 0;
+}
+
+.list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.list li a:hover {
+    text-decoration: underline;
+    transition: 0.8s ease;
+}
+
+
+
+.line {
+    display: inline;
+    padding-left: 15px;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.custom-search {
+    width: 800px; /* o el ancho deseado */
+    height: 30px; /* o la altura deseada */
+    align-items: center;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    display: block;
+    color: var(--foreground-primary);
+}
+
+.h1 {
+    font-size: var(--fs-1);
+    font-weight: 900;
+}
+
+.h2 {
+    font-size: var(--fs-2);
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: var(--fs-3);
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: var(--fs-4);
+    font-weight: 700;
+}
+
+/* Header */
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero .btn-group {
+    justify-content: start;
+    gap: 30px;
+}
+
+.hero .right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .pattern-bg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 200px;
+    background: url(../images/pattern.png);
+    background-size: contain;
+    opacity: 0.2;
+}
+
+.hero .img-box {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0 0 280px 230px;
+    transform: translate(10px, -10px);
+}
+
+.hero .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -42%) rotate(-20deg);
+}
+
+.hero .shape-1 {
+    background: var(--accent);
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+}
+
+.hero .shape-2 {
+    width: 92%;
+    height: 92%;
+    box-shadow: inset 0 -30px 0 var(--action-primary);
+    z-index: 2;
+}
+
+/* PERSONAL DISPONIBLE*/
+#recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 60px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.recipe-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    padding: 30px 0;
+    width: min(1200px, 100%);
+    transition: box-shadow 0.3s ease;
+}
+
+.recipe-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #352d3f;
+    margin: 20px 0 40px;
+}
+
+.swiper {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.swiper-scrollbar {
+    --swiper-scrollbar-bottom: 0px;
+    --swiper-scrollbar-drag-bg-color: hsl(188, 69%, 49%);
+    --swiper-scrollbar-size: 5px;
+}
+
+.post {
+    position: relative;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--clr-text);
+    background-color: transparent;
+    border-radius: 10px;
+    isolation: isolate;
+}
+
+.post::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    background: rgba(236, 149, 200, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.post-img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 6px;
+}
+
+.post-body {
+    display: grid;
+    grid-template-columns: 15% 60% 20%;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 0;
+    cursor: default;
+    transition: box-shadow 0.3s ease;
+}
+
+.post-body:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #211c27;
+}
+
+.post-author {
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.6;
+    color: var(--clr-text);
+    color: #211c27;
+}
+
+.post-avatar {
+    width: 40px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-actions {
+    position: relative;
+}
+
+.post-actions-content {
+    position: absolute;
+    bottom: 130%;
+    right: 0;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(172, 172, 172, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px 2px hsl(0, 0%, 0%, 0.25);
+    transition: opacity 0.25s, scale 0.25s;
+    transform-origin: bottom right;
+}
+
+.post-actions-content[data-visible="false"] {
+    pointer-events: none;
+    opacity: 0;
+    scale: 0;
+}
+
+.post-actions-content[data-visible="true"] {
+    pointer-events: unset;
+    scale: 1;
+    opacity: 1;
+}
+
+.post-actions-content li {
+    padding: 0.5rem 0.65rem;
+    border-radius: 0.25rem;
+    list-style: none;
+}
+
+.post-actions-content li:is(:hover, :focus-within) {
+    background-color: rgba(248, 132, 169, 0.7);
+}
+
+.post-actions-link {
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    align-items: center;
+    gap: 0.6rem;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post-like {
+    text-decoration: none;
+    color: var(--clr-text);
+    margin-right: 5px;
+    font-size: 1.1rem;
+    opacity: 0.65;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+.post-actions-controller {
+    border: 0;
+    background: none;
+    color: var(--clr-text);
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.post-like:hover,
+.post-actions-controller:hover {
+    opacity: 1;
+}
+
+.post-like:focus {
+    outline: none;
+}
+
+.post-like.active {
+    color: rgb(255, 0, 0);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* EQUIPO - TEAM*/
+.team {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0 40px ;
+    gap: 60px;
+}
+
+.container .box {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.mt-4 {
+    margin-top: .5rem;
+}
+
+.container h1 {
+    margin-bottom: .5rem;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    width: 55%;
+}
+
+.input-group-append {
+    margin-left: 1rem;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.d-flex {
+    align-items: center;
+}
+
+.btn-outline-secondary {
+    margin-right: 0.5rem;
+    color: white;
+    border-color: white;
+}
+
+.container .box:hover::before {
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+
+.container .box::after {
+    content: '';
+    position: absolute;
+    inset: 60px -10px;
+    border-left: 4px solid var(--clr);
+    border-right: 4px solid var(--clr);
+    z-index: -1;
+    transform: skew(15deg);
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover::after {
+    transform: skew(0deg);
+    inset: 40px -10px;
+}
+
+.container .box .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .box .content .icon {
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .icon {
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+}
+
+.container .box .content .text h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text h3 {
+    color: #2e2e2e;
+}
+
+.container .box .content .text p {
+    color: #999;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text p {
+    color: #2e2e2e;
+}
+
+.container .box .content .text a {
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text a {
+    background: #2e2e2e;
+    color: var(--clr);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 0;
+    }
+
+    .container .box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .swiper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    #recipes {
+        padding: 60px 80px;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 765px) {
+    .swiper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
+    #recipes {
+        padding: 40px 40px;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+}
