@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(174, 230, 242);
+    height: 90px;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Estilos para los navegadores desplegables */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.letratip1{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    right: 10;
+    left: 70px;
+    
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para el botón de juntar */
+.button {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+    
+}
+.container-fluid {
+    background-color: rgb(18, 21, 27);
+    color: white;
+}
+
+.titulos {
+    color: white;
+}
+
+.list {
+    list-style: none;
+    color: white;
+    padding-left:0;
+    
+}
+.list li a {
+    text-decoration: none;
+    color: white; 
+
+}
+
+.list li a:hover {
+    text-decoration: underline;
+    transition: 0.8s ease;
+}
+
+
+.row {
+padding: 20px;
+}
+
+
+.line {
+    display:inline;
+    padding-left:15px;
+
+}
+
