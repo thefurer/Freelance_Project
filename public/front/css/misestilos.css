@@ -10,9 +10,7 @@ p {
   margin: 0;
   padding: 0;
 }
-html {
 
-}
 .header-main{
   position: fixed;
   top: 0;
@@ -90,7 +88,8 @@ h2.title {
   width: 100%;
   user-select: none;
   pointer-events: none;
-  padding-top: 0.9rem;
+  padding-top: 1.15rem;
+ 
 }
 h2.two {
   font-size: 225px;
@@ -101,13 +100,14 @@ h2.two {
   text-transform: uppercase;
   position: absolute;
   top: -40px;
-  left: 110px;
+  left: 0px;
   width: 100%;
   user-select: none;
   pointer-events: none;
-  padding-top: 0.9rem;
+  padding-top: 1.15rem;
   
 }
+
 p {
   margin: 0 0 24px;
   font-weight: 400;
@@ -166,12 +166,13 @@ p {
   width: 24px;
 }
 /* dark theme */
-.theme-dark {
+/* .theme-dark {
   color: rgb(255 255 255 / 8%);
-}
-.theme-dark P {
+} */
+/* .theme-dark P {
   color: var(--color-2);
-}
+} */
+
 
 /* Banner */
 .banner {
@@ -283,6 +284,10 @@ p {
 .designer-section {
   background-color: hsl(218, 57%, 19%);
   padding: 210px 0 0;
+  
+}
+.lordtwo {
+  padding-top: 180px;
 }
 .designer-box {
   width: 100%;
