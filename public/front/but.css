@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10px;
-  min-height: 100vh;
-  background: #5991ec;
-  background-image: linear-gradient(to right, #699aea, #7975f4);
-}
-
 /*COMIENZA EL DISEÑO DEL BOTON*/
 .btn {
   padding: 1em 2em;
