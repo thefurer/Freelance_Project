@@ -176,31 +176,34 @@ p {
 
 /* Banner */
 .banner {
-  background: #15294C;
+  /* DEGRADADO*/
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(/public/img/fabrizio-conti-kXVogATbFgA-unsplash.jpg);
   height: 100vh;
   width: 100%;
   overflow: hidden;
 }
+/*
 .banner-img {
-  margin-left: 6rem;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .banner-img::before {
   position: absolute;
   content: "";
-  
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
 }
 .banner-img img {
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center; 
 }
+*/
 .banner-box {
   padding: 60px;
  
