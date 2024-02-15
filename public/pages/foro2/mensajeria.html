@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        #container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .forum-section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .post h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .post p {
+            margin-bottom: 0;
+            color: #333;
+        }
+        #new-post {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 class="text-center">Foro</h1>
+        
+        <!-- Foro de Mensajería -->
+        <div class="forum-section" id="messaging-forum">
+            <h2 class="text-primary">Foro de Mensajería</h2>
+            <div id="messages">
+                <!-- Aquí se mostrarán los mensajes del foro de mensajería -->
+            </div>
+            <div id="new-message">
+                <h3 class="text-primary">Nuevo Mensaje</h3>
+                <textarea id="message-content" class="form-control mb-3" placeholder="Escribe tu mensaje"></textarea>
+                <button onclick="sendMessage()" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS y dependencias de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function sendMessage() {
+            var message = document.getElementById('message-content').value;
+
+            var messagesDiv = document.getElementById('messages');
+            var messageDiv = document.createElement('div');
+            messageDiv.classList.add('post');
+
+            var contentElement = document.createElement('p');
+            contentElement.textContent = message;
+
+            messageDiv.appendChild(contentElement);
+
+            messagesDiv.appendChild(messageDiv);
+
+            // Limpiar los campos después de enviar el mensaje
+            document.getElementById('message-content').value = '';
+        }
+    </script>
+</body>
+</html>

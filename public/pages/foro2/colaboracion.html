@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro</title>
+    <style>
+        /* Estilos CSS para mejorar la apariencia */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+        #container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+        .forum-section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .post h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .post p {
+            margin-bottom: 0;
+            color: #666;
+        }
+        #new-post, #new-collaboration-post {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        #success-message {
+            display: none;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            animation: fadeOut 3s ease-in-out forwards;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="text-align: center; color: #3a3a3a;">Foro</h1>
+
+        <!-- Foro de Colaboración -->
+        <div class="forum-section" id="collaboration-forum">
+            <h2 style="color: #3a3a3a;">Foro de Colaboración</h2>
+            <div id="collaboration-posts">
+                <!-- Aquí se mostrarán las publicaciones del foro de colaboración -->
+            </div>
+            <div id="new-collaboration-post">
+                <h3 style="color: #3a3a3a;">Nueva Publicación en Foro de Colaboración</h3>
+                <input type="text" id="collaboration-post-title" placeholder="Título de la publicación"><br>
+                <textarea id="collaboration-post-content" placeholder="Contenido de la publicación"></textarea><br>
+                <button onclick="createCollaborationPost()">Publicar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="success-message">¡Publicación exitosa!</div>
+
+    <script>
+        function createCollaborationPost() {
+            var title = document.getElementById('collaboration-post-title').value;
+            var content = document.getElementById('collaboration-post-content').value;
+
+            var collaborationPostsDiv = document.getElementById('collaboration-posts');
+            var postDiv = document.createElement('div');
+            postDiv.classList.add('post');
+
+            var titleElement = document.createElement('h2');
+            titleElement.textContent = title;
+
+            var contentElement = document.createElement('p');
+            contentElement.textContent = content;
+
+            postDiv.appendChild(titleElement);
+            postDiv.appendChild(contentElement);
+
+            collaborationPostsDiv.appendChild(postDiv);
+
+            // Limpiar los campos después de publicar
+            document.getElementById('collaboration-post-title').value = '';
+            document.getElementById('collaboration-post-content').value = '';
+
+            // Mostrar mensaje de publicación exitosa
+            var successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+            setTimeout(function() {
+                successMessage.style.display = 'none';
+            }, 3000); // Ocultar el mensaje después de 3 segundos
+        }
+    </script>
+</body>
+</html>
