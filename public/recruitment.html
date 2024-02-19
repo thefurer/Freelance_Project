@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Recruitment Form </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form id="myForm1">
+  <h2>Datos de Contratación</h2>
+  <div class="form-group fullname">
+    <label for="fullname">Nombre Completo</label>
+    <input type="text" id="fullname" placeholder="Enter your full name">
+  </div>
+  <div class="form-group email">
+    <label for="email">Correo Electonico</label>
+    <input type="text" id="email" placeholder="Enter your email address">
+  </div>
+  <div class="form-group phone">
+    <label for="phone">Teléfono</label>
+    <input type="text" id="phone" placeholder="Enter your phone number">
+  </div>
+  <div class="form-group address">
+    <label for="address">Dirección</label>
+    <input type="text" id="address" placeholder="Enter your address">
+  </div>
+  <div class="form-group gender">
+    <label for="gender">Genero</label>
+    <select id="gender">
+      <option value="" selected disabled>Select your gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div class="form-group start-date">
+    <label for="start-date">Fecha de inicio</label>
+    <input type="date" id="start-date" placeholder="Select your start date">
+  </div>
+  <div class="form-group salary">
+    <label for="salary">Salario</label>
+    <input type="number" id="salary" placeholder="Enter your salary">
+  </div>
+  <div class="form-group conditions">
+    <label for="conditions">Condiciones o Especificaciones del trabajo</label>
+    <textarea id="conditions" placeholder="Enter your conditions"></textarea>
+  </div>
+  <div class="form-group submit-btn">
+    <input type="submit" value="Enviar">
+  </div>
+  <div class="form-group submit-btn">
+    <input type="submit" value="Retorno"  onclick="location.href='/public/pages/index.html'">
+  </div> 
+</form>
+
+
+<div id="thank-you-content" style="display: none; color: #d1e1ff";>
+  <h1>💙 Gracias por completar el proceso de contratación 💙</h1>
+  <div class="form-group submit-btn">
+    <input type="submit" value="Retorno"  onclick="location.href='/public/pages/index.html'">
+  </div>
+</div>
+<!-- partial -->
+  <script  src="/public/front/js/scriprecrut.js"></script>
+</body>
+</html>
