@@ -11,6 +11,30 @@ gsap.to("#bannerBigimg", {
   repeatRefresh: true
 });
 
+
+/* class UsuarioController {
+  constructor() {
+      // Aquí podríamos inicializar cosas si es necesario
+  }
+  mostrarPerfilUsuario(id) {
+      // Llamar al modelo para obtener los datos del usuario
+      const usuario = Usuario.obtenerPorId(id);
+
+      // Renderizar la vista del perfil del usuario
+      Vista.renderizarPerfilUsuario(usuario);
+  }
+  actualizarInformacionUsuario(id, nuevaInformacion) {
+      // Llamar al modelo para actualizar la información del usuario
+      Usuario.actualizarInformacion(id, nuevaInformacion);
+
+      // Redirigir a la vista del perfil actualizado
+      this.mostrarPerfilUsuario(id);
+  }
+}
+const usuarioController = new UsuarioController();
+usuarioController.mostrarPerfilUsuario(1);
+usuarioController.actualizarInformacionUsuario(1, { nombre: "Nuevo Nombre", email: "nuevo@example.com" });
+ */
 // Banner Big Text
 gsap.to("#headingBig", {
   duration: 1.5,

@@ -9,6 +9,31 @@ let allButtons = document.querySelectorAll(".submit");
 
 let getButtons = (e) => e.preventDefault()
 
+
+
+/* class Usuario {
+    constructor(id, nombre, email, password) {
+        this.id = id;
+        this.nombre = nombre;
+        this.email = email;
+        this.password = password;
+    }
+    guardarEnBaseDeDatos() {
+    }
+    static obtenerPorId(id) {  
+    }
+    static obtenerPorEmail(email) {
+    }
+}
+
+const usuario1 = new Usuario(1, "Ejemplo", "ejemplo@example.com", "password");
+usuario1.guardarEnBaseDeDatos();
+
+
+ */
+
+
+
 let changeForm = (e) => {
 
     switchCtn.classList.add("is-gx");

@@ -9,9 +9,150 @@ html {
   line-height: 1.8;
 }
 
+.ul-categorias {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+}
+.ul-categorias a {
+text-decoration: none;
+width: 330px;
+   height: 300px;
+   flex: auto;
+   border-radius: 10px;
+   transition: all 0.3s ease;
+ 
+   background-size: cover;
+   background-position: center center;
+  
+}
+.ul-categorias a:hover {
+ opacity: 0.963;
+  }
+
+.ul-categorias li {
+   height: 100%;
+   /* border: 1px solid red; */
+   border-radius: 10px;
+  
+   
+}
+
+.ul-categorias a:nth-child(1) {
+  background-image: url(./img/hosteleria.png);
+}
+.ul-categorias a:nth-child(2) {
+  background-image: url(./img/desarrollo.png);
+}
+.ul-categorias a:nth-child(3) {
+  background-image: url(./img/deporte.png);
+}
+.ul-categorias a:nth-child(4) {
+  background-image: url(./img/sop_tec.jpg);
+}
+.ul-categorias a:nth-child(5) {
+  background-image: url(./img/slider-1.png);
+}
+
+
+
+.ul-categorias li .sombra {
+  background-color: hsla(0, 0%, 0%, 47%);
+  height: 100%;
+  padding: 1em;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  place-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.ul-categorias li .sombra .tituto_catg {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 3px 3px 7px hsl(218, 57%, 19%);
+}
+.ul-categorias li .sombra .profesionales_num {
+  color: hsla(0, 0%, 100%, 95%);
+  font-size: 1.4rem;
+  font-style: italic;
+/*   background-color: #333333ef; */
+background-color: #333333bb; 
+border-radius: 8px;
+  padding: 0.2em 0.6em;
+  
+ 
+}
+
+.sombra p 
+{
+  margin: 0;
+  margin-bottom: 0.6em;
+}
+
+.boton-categorias {
+  outline: 0;
+  border: none;
+  font-family: inherit;
+ --color: hsla(218, 57%, 19%, 100%);
+ display: inline-block;
+ width: 12em;
+ height: 2.9em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ outline: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 19px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+ background-color: #ffffffd9;
+ 
+}
+
+.boton-categorias:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: hsl(218, 57%, 12%);
+ height: 150px;
+ width: 300px;
+ border-radius: 30%;
+
+}
+
+.boton-categorias:hover {
+ color: #fff;
+ outline: 1px solid #ffffffda;
+
+}
+
+.boton-categorias:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+.boton-categorias:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+.boton-categorias:active:before {
+ background: var(--color);
+ transition: background-color 0s;
+}
+
 .unete {
   transition: all 0.5s ease-in-out;
-  background: transparent;
+  background-color: transparent;
   border: 3px solid hsl(188, 69%, 49%);
   color: white;
   border-radius: 7rem;
