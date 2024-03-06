@@ -4,11 +4,11 @@ const form = document.getElementById("myForm1"),
   emailInput = document.getElementById("email"),
   phoneInput = document.getElementById("phone"),
   addressInput = document.getElementById("address"),
-  genderInput = document.getElementById("gender"),
+  empresaInput = document.getElementById("empresa"),
   startDateInput = document.getElementById("start-date"),
   salaryInput = document.getElementById("salary"),
   conditionsInput = document.getElementById("conditions"),
-  thankYouMessage = document.getElementById("thank-you-content");
+  thankYouMessage = document.getElementById("thank-you-content"); // Asegúrate de tener este elemento en tu HTML
 
 // Error handling function
 const showError = (field, errorText) => {
@@ -27,17 +27,19 @@ const checkEmailPattern = (email) =>
 const handleFormData = (e) => {
   e.preventDefault();
 
-  const [fullname, email, phone, address, gender, startDate, salary, conditions] = [
+  // Updated to include the new input fields
+  const [fullname, email, phone, address, empresa, startDate, salary, conditions] = [
     fullnameInput,
     emailInput,
     phoneInput,
     addressInput,
-    genderInput,
+    empresaInput,
     startDateInput,
     salaryInput,
     conditionsInput
   ].map((input) => input.value.trim());
 
+  // Clear previous errors
   document
     .querySelectorAll(".form-group .error")
     .forEach((field) => field.classList.remove("error"));
@@ -45,23 +47,23 @@ const handleFormData = (e) => {
     .querySelectorAll(".error-text")
     .forEach((errorText) => errorText.remove());
 
+  // Updated validation checks
   if (fullname === "") showError(fullnameInput, "Ingrese su nombre completo");
   if (!checkEmailPattern(email))
     showError(emailInput, "Ingrese un correo electrónico válido");
   if (phone === "") showError(phoneInput, "Ingrese su número de teléfono");
   if (address === "") showError(addressInput, "Ingrese su dirección");
-  if (gender === "") showError(genderInput, "Seleccione su género");
+  if (empresa === "") showError(empresaInput, "Ingrese el nombre de la empresa");
   if (startDate === "") showError(startDateInput, "Seleccione su fecha de inicio");
   if (salary === "") showError(salaryInput, "Ingrese su salario");
   if (conditions === "") showError(conditionsInput, "Ingrese sus condiciones");
 
+  // Display thank you message if no errors
   if (!document.querySelectorAll(".form-group .error").length) {
     form.style.display = "none";
-    thankYouMessage.style.display = "block";
+    thankYouMessage.style.display = "block"; // Asegúrate de tener este elemento en tu HTML
   }
 };
 
 // Form submit event
 form.addEventListener("submit", handleFormData);
-
-

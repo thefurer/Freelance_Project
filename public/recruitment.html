@@ -9,61 +9,60 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<header>
+  
+</header>
 <form id="myForm1">
-  <h2>Datos de Contratación</h2>
+  <h2>Datos Generales de Contratación</h2>
   <div class="form-group fullname">
     <label for="fullname">Nombre Completo</label>
-    <input type="text" id="fullname" placeholder="Enter your full name">
+    <input type="text" id="fullname" placeholder="Ingresa su nombre Completo">
   </div>
+
   <div class="form-group email">
     <label for="email">Correo Electonico</label>
-    <input type="text" id="email" placeholder="Enter your email address">
+    <input type="text" id="email" placeholder="Ingresa su email ">
   </div>
   <div class="form-group phone">
     <label for="phone">Teléfono</label>
-    <input type="text" id="phone" placeholder="Enter your phone number">
+    <input type="text" id="phone" placeholder="Ingresa tu número de teléfono">
   </div>
   <div class="form-group address">
     <label for="address">Dirección</label>
-    <input type="text" id="address" placeholder="Enter your address">
+    <input type="text" id="address" placeholder="Ingrese su Dirección">
   </div>
-  <div class="form-group gender">
-    <label for="gender">Genero</label>
-    <select id="gender">
-      <option value="" selected disabled>Select your gender</option>
-      <option value="Male">Male</option>
-      <option value="Female">Female</option>
-      <option value="Other">Other</option>
-    </select>
+  <div class="form-group empresa">
+    <label for="empresa">Empresa</label>
+    <input type="text" id="empresa" name="empresa" placeholder="Ingresa el nombre de la empresa">
   </div>
   <div class="form-group start-date">
     <label for="start-date">Fecha de inicio</label>
-    <input type="date" id="start-date" placeholder="Select your start date">
+    <input type="date" id="start-date" placeholder="Selecione el dìa">
   </div>
   <div class="form-group salary">
     <label for="salary">Salario</label>
-    <input type="number" id="salary" placeholder="Enter your salary">
+    <input type="number" id="salary" placeholder="Ingresa tu salario" step="0.01" min="0">
   </div>
-  <div class="form-group conditions">
+  <div class="form-group fullwidth">
     <label for="conditions">Condiciones o Especificaciones del trabajo</label>
-    <textarea id="conditions" placeholder="Enter your conditions"></textarea>
+    <textarea id="conditions" placeholder="Ingresa tu mensaje"></textarea>
   </div>
   <div class="form-group submit-btn">
     <input type="submit" value="Enviar">
+    <input type="submit" value="Retorno"  onclick="location.href='/Freelance_Project/public/pages/index.html'">
   </div>
-  <div class="form-group submit-btn">
-    <input type="submit" value="Retorno"  onclick="location.href='/public/pages/index.html'">
-  </div> 
 </form>
+
+
 
 
 <div id="thank-you-content" style="display: none; color: #d1e1ff";>
   <h1>💙 Gracias por completar el proceso de contratación 💙</h1>
   <div class="form-group submit-btn">
-    <input type="submit" value="Retorno"  onclick="location.href='/public/pages/index.html'">
+    <input type="submit" value="Retorno"  onclick="location.href='/Freelance_Project/public/pages/index.html'">
   </div>
 </div>
 <!-- partial -->
-  <script  src="/public/front/js/scriprecrut.js"></script>
+  <script  src="/Freelance_Project/public/js/scriprecrut.js"></script>
 </body>
 </html>
