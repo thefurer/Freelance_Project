@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title> Recruitment Form </title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/public/style.css">
 
 </head>
 <body>
@@ -32,16 +32,20 @@
     <input type="text" id="address" placeholder="Ingrese su Dirección">
   </div>
   <div class="form-group empresa">
-    <label for="empresa">Empresa</label>
+    <label for="empresa">Empresa (opcional)</label>
     <input type="text" id="empresa" name="empresa" placeholder="Ingresa el nombre de la empresa">
   </div>
   <div class="form-group start-date">
-    <label for="start-date">Fecha de inicio</label>
+    <label for="start-date">Fecha de inicio del servicio</label>
+    <input type="date" id="start-date" placeholder="Selecione el dìa">
+  </div>
+  <div class="form-group start-date">
+    <label for="start-date">Fecha de fin del servicio</label>
     <input type="date" id="start-date" placeholder="Selecione el dìa">
   </div>
   <div class="form-group salary">
-    <label for="salary">Salario</label>
-    <input type="number" id="salary" placeholder="Ingresa tu salario" step="0.01" min="0">
+    <label for="salary">Salario pretendido a pagar por servicio</label>
+    <input type="number" id="salary" placeholder="Ingresa el valor pretendido a pagar" step="0.01" min="0">
   </div>
   <div class="form-group fullwidth">
     <label for="conditions">Condiciones o Especificaciones del trabajo</label>
@@ -49,7 +53,7 @@
   </div>
   <div class="form-group submit-btn">
     <input type="submit" value="Enviar">
-    <input type="submit" value="Retorno"  onclick="location.href='/Freelance_Project/public/pages/index.html'">
+    <input type="submit" value="Retorno"  onclick="location.href='/public/pages/index.html'">
   </div>
 </form>
 
@@ -59,10 +63,10 @@
 <div id="thank-you-content" style="display: none; color: #d1e1ff";>
   <h1>💙 Gracias por completar el proceso de contratación 💙</h1>
   <div class="form-group submit-btn">
-    <input type="submit" value="Retorno"  onclick="location.href='/Freelance_Project/public/pages/index.html'">
+    <input type="submit" value="Retorno"  onclick="location.href='/public/pages/index.html'">
   </div>
 </div>
 <!-- partial -->
-  <script  src="/Freelance_Project/public/js/scriprecrut.js"></script>
+  <script  src="/public/js/scriprecrut.js"></script>
 </body>
 </html>
