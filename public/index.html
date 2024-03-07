@@ -453,15 +453,28 @@
         <ul class="box">
           <li class="link_name">Comunidad</li>
           <li><a href="/public/pages/Historias.html">Historias de éxito de clientes</a></li>
-          <li><a href="/public/front/index.html">Centro de la comunidad</a></li>
+          <li><a href="/public/pages/index.html">Centro de la comunidad</a></li>
           <li><a href="/public/pages/foro.html">Foro</a></li>
           <li><a href="/public/pages/blog.html">Blog</a></li>
         </ul>
         <ul class="box input-box">
-          <li class="link_name">Subscribete</li>
-          <li><input type="text" placeholder="Enter your email"></li>
+          <li class="link_name">Subscríbete</li>
+          <li><input type="text" placeholder="Ingresa tu correo"></li>
           <li><input type="button" value="Subscribete"></li>
         </ul>
+        <script>
+        window.onload = function() {
+          document.querySelector('.input-box input[type="button"]').addEventListener('click', function() {
+            var email = document.querySelector('.input-box input[type="text"]').value;
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if(email && emailRegex.test(email)) {
+              alert('Mensaje enviado a ' + email);
+            } else {
+              alert('Por favor, introduce un correo electrónico válido');
+            }
+          });
+        }
+        </script>
       </div>
     </div>
     <div class="bottom-details">
