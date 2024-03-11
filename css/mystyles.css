@@ -42,19 +42,19 @@ width: 330px;
 }
 
 .ul-categorias a:nth-child(1) {
-  background-image: url(/public/img/hosteleria.png);
+  background-image: url(/img/hosteleria.png);
 }
 .ul-categorias a:nth-child(2) {
-  background-image: url(/public/img/desarrollo.png);
+  background-image: url(/img/desarrollo.png);
 }
 .ul-categorias a:nth-child(3) {
-  background-image: url(/public/img/deporte.png);
+  background-image: url(/img/deporte.png);
 }
 .ul-categorias a:nth-child(4) {
-  background-image: url(/public/img/sop_tec.jpg);
+  background-image: url(/img/sop_tec.jpg);
 }
 .ul-categorias a:nth-child(5) {
-  background-image: url(/public/img/slider-1.png);
+  background-image: url(/img/slider-1.png);
 }
 
 
