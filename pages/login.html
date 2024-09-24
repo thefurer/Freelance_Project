@@ -24,8 +24,74 @@
         </div>
         <span class="form__span">O Utilice el Correo Electrónico Para Registrarse!</span>
         <input class="form__input" type="text" placeholder="Nombre">
+        <input class="form__input" type="text" placeholder="Apellido Paterno">
+        <input class="form__input" type="text" placeholder="Apellido Materno">
+        <select class="form__input" id="country-select">
+          <option value="" disabled selected>Seleccione su país</option>
+          <option value="mx">México</option>
+          <option value="ar">Argentina</option>
+          <option value="cl">Chile</option>
+          <option value="pe">Perú</option>
+          <option value="co">Colombia</option>
+          <option value="otr">Otros</option>
+        </select>
+        
+        <select class="form__input" id="bank-entity" disabled>
+          <option value="" disabled selected>Seleccione su entidad bancaria</option>
+        </select>
+        
+        <input class="form__input" type="text" id="account-number" placeholder="Número de cuenta" style="display: none;">
+        
+        <script>
+          document.getElementById('country-select').addEventListener('change', function() {
+            const country = this.value;
+            const bankSelect = document.getElementById('bank-entity');
+            
+            // Clear previous bank options
+            bankSelect.innerHTML = '<option value="" disabled selected>Seleccione su entidad bancaria</option>';
+            
+            // Enable the bank select
+            bankSelect.disabled = false;
+        
+            // Define bank options based on the selected country
+            const banks = {
+              mx: ['BBVA', 'Banorte', 'Santander'],
+              ar: ['Banco Galicia', 'Banco Nación', 'Banco Provincia'],
+              cl: ['Banco de Chile', 'BancoEstado', 'BCI'],
+              pe: ['BBVA Perú', 'BCP', 'Interbank'],
+              co: ['Bancolombia', 'Davivienda', 'Banco de Bogotá'],
+              otr:['Otro']
+            };
+        
+            // Populate the bank select with relevant options
+            if (banks[country]) {
+              banks[country].forEach(bank => {
+                const option = document.createElement('option');
+                option.value = bank;
+                option.textContent = bank;
+                bankSelect.appendChild(option);
+              });
+            }
+          });
+        
+          document.getElementById('bank-entity').addEventListener('change', function() {
+            const accountNumberInput = document.getElementById('account-number');
+            accountNumberInput.style.display = 'block'; // Show the account number input when a bank is selected
+          });
+        </script>
+        
+        <select class="form__input">
+          <option value="" disabled selected>Seleccione su rol</option>
+          <option value="admin">Administrador</option>
+          <option value="user">Usuario</option>
+          <option value="guest">Invitado</option>
+          <option value="dev">Programador</option>
+          <option value="aud">Auditor</option>
+        </select>
+        <input class="form__input" type="text" placeholder="Número de celular">
+        <input class="form__input" type="text" placeholder="Número de cuenta">
         <input class="form__input" type="text" placeholder="Email">
-        <input class="form__input" type="password" placeholder="Contraseña">
+        <input class="form__input" type="password" placeholder="contraseña">
         <button class="form__button button submit">Registrarse</button>
       </form>
     </div>
@@ -42,7 +108,10 @@
         <input class="form__input" type="text" placeholder="Email">
         <input class="form__input" type="password" placeholder="Contraseña"><a href="#" class="form__link">¿Olvidaste tu
           Contraseña?</a>
-        <button class="form__button button submit">Iniciar Sesión</button>
+          <a href="/pages/dashboard.html">
+            <button class="form__button button submit">Iniciar Sesión</button>
+          </a>
+       
       </form>
     </div>
     <div class="switch" id="switch-cnt">

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Socios</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+  <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'><link rel="stylesheet" href="/css/styledash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+      <div class="image-wrapper">
+        <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+      </div>
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <div class="pro-sidebar-logo">
+            <div>I</div>
+            <h5>Socios</h5>
+          </div>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <!--
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-globe"></i>
+                  </span>
+                  <span class="menu-title">Comisiones</span>
+                </a>
+                  <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/flora.html">
+                          <span class="menu-icon">
+                             <i class="fas fa-clipboard-list"></i>
+                          </span>
+                          <span class="menu-title">Flora</span>
+                      </a>
+                    </li> 
+                    <li class="menu-item">
+                      <a href="index/fauna.html">
+                          <span class="menu-icon">
+                             <i class="fas fa-clipboard-list"></i>
+                          </span>
+                          <span class="menu-title">Fauna</span>
+                      </a>
+                    </li>                  
+                    <li class="menu-item sub-menu">
+                      <a href="#">
+                        <span class="menu-icon">
+                          <i class="fas fa-chart-bar"></i>
+                        </span>
+                        <span class="menu-title">Reportes y estadisticas</span>
+                      </a>
+                      <div class="sub-menu-list">
+                        <ul>
+                          <li class="menu-item">
+                            <a href="index/mapa.html">
+                              <span class="menu-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <span class="menu-title">Mapa de Distribución</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>  
+                  </ul>
+                </div>
+               
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-paw"></i>
+                  </span>
+                  <span class="menu-title">Gestion Fauna</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/registrofauna.html" target="_self">
+                          <span class="menu-icon">
+                              <i class="fas fa-user-plus"></i>
+                          </span>
+                          <span class="menu-title">Registros</span>
+                      </a>
+                    </li> 
+                                
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-leaf"></i>
+                  </span>
+                  <span class="menu-title">Gestion Flora</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/registroflora.html" target="_self">
+                          <span class="menu-icon">
+                              <i class="fas fa-user-plus"></i>
+                          </span>
+                          <span class="menu-title">Registros</span>
+                      </a>
+                    </li>                  
+                    <li class="menu-item">
+                      <a href="index/consultaflora.html">
+                        <span class="menu-icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span class="menu-title">Consultas</span>
+                      </a>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+              <li class="menu-item sub-menu">
+                <a href="index/monitoreo.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="ri-global-fill"></i>
+                  </span>
+                  <span class="menu-title">Monitoreo</span>
+                </a>
+                
+              </li>
+              -->
+              
+
+              <li class="menu-header" style="padding-top: 20px"><span>Reportes</span></li>
+              <li class="menu-item">
+                <a href="/pages/comisiones.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-bullhorn"></i>
+                  </span>
+                  <span class="menu-title">Comisiones</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="/pages/implementacion.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-flask"></i>
+                  </span>
+                  <span class="menu-title">Implementación</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar-footer">
+          <div class="footer-box">
+            <div>
+              <img src="img/LOG.png"  width="80px" heigth="80px"/>
+            </div>
+            <div style="padding: 0 10px">
+              <span style="display: block; margin-bottom: 10px">Iso perfil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div class="layout">
+      
+      <div>
+        <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+          <i class="ri-menu-line ri-xl"></i>
+        </a>
+        <h1 class="dashboard-title">Dashboard</h1>
+      
+        <!-- Sección de Novedades -->
+        <div class="dashboard-novedades container">
+          <h2 class="section-title">Últimas novedades</h2><br>
+      
+          <div class="novedades-grid">
+            <!-- Tarjeta de novedad 1 -->
+            <div class="novedad-card">
+              <div class="novedad-card-header">
+                <img src="https://source.unsplash.com/400x400/?update" alt="Nueva función">
+              </div>
+              <div class="novedad-card-body">
+                <h3>Nuevo Panel de Reportes</h3>
+                <p>Accede al nuevo panel para ver reportes detallados de tus métricas. Ahora con gráficos interactivos.</p>
+                <button class="btn">Ver más</button>
+              </div>
+            </div>
+      
+            <!-- Tarjeta de novedad 2 -->
+            <div class="novedad-card">
+              <div class="novedad-card-header">
+                <img src="https://source.unsplash.com/400x400/?data" alt="Actualización de datos">
+              </div>
+              <div class="novedad-card-body">
+                <h3>Mejoras en la Seguridad</h3>
+                <p>Se han implementado nuevas medidas de seguridad en el acceso al dashboard para proteger tus datos.</p>
+                <button class="btn">Ver más</button>
+              </div>
+            </div>
+      
+            <!-- Tarjeta de novedad 3 -->
+            <div class="novedad-card">
+              <div class="novedad-card-header">
+                <img src="https://source.unsplash.com/400x400/?notifications" alt="Notificaciones">
+              </div>
+              <div class="novedad-card-body">
+                <h3>Notificaciones en Tiempo Real</h3>
+                <p>Recibe alertas y notificaciones en tiempo real sobre las actividades importantes en tu cuenta.</p>
+                <button class="btn">Ver más</button>
+              </div>
+            </div>
+      
+            <!-- Tarjeta de novedad 4 -->
+            <div class="novedad-card">
+              <div class="novedad-card-header">
+                <img src="https://source.unsplash.com/400x400/?settings" alt="Configuración">
+              </div>
+              <div class="novedad-card-body">
+                <h3>Configuración Avanzada</h3>
+                <p>Ajusta la configuración del sistema con las nuevas opciones avanzadas para personalizar tu experiencia.</p>
+                <button class="btn">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .dashboard-title {
+          font-size: 32px;
+          color: #333;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      
+        .section-title {
+          font-size: 24px;
+          color: #555;
+        }
+      
+        .novedades-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          gap: 20px;
+        }
+      
+        .novedad-card {
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          text-align: center;
+        }
+      
+        .novedad-card-header img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+      
+        .novedad-card-body {
+          padding: 20px;
+        }
+      
+        .novedad-card-body h3 {
+          font-size: 20px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+      
+        .novedad-card-body p {
+          font-size: 16px;
+          color: #777;
+          margin-bottom: 20px;
+        }
+      
+        .btn {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+      
+        .btn:hover {
+          background-color: #45a049;
+        }
+      </style>
+  </div>
+  <!-- partial -->
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+  <!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script><script  src="/js/scriptdash.js"></script>
+
+</body>
+
+</html>
