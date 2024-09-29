@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Analista</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+  <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'><link rel="stylesheet" href="/css/styledash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylecom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+      <div class="image-wrapper">
+        <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+      </div>
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <div class="pro-sidebar-logo">
+            <div>A</div>
+            <h5>Analistas...</h5>
+          </div>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <li class="menu-item">
+                <a href="/pages/indexdasadmin.html">
+                  <span class="menu-icon">
+                    <i class="fas fa-globe"></i>
+                  </span>
+                  <span class="menu-title">INICIO</span>
+                </a>
+              </li>
+            </ul>
+            <!--
+                  <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/flora.html">
+                          <span class="menu-icon">
+                             <i class="fas fa-clipboard-list"></i>
+                          </span>
+                          <span class="menu-title">Flora</span>
+                      </a>
+                    </li> 
+                    <li class="menu-item">
+                      <a href="index/fauna.html">
+                          <span class="menu-icon">
+                             <i class="fas fa-clipboard-list"></i>
+                          </span>
+                          <span class="menu-title">Fauna</span>
+                      </a>
+                    </li>                  
+                    <li class="menu-item sub-menu">
+                      <a href="#">
+                        <span class="menu-icon">
+                          <i class="fas fa-chart-bar"></i>
+                        </span>
+                        <span class="menu-title">Reportes y estadisticas</span>
+                      </a>
+                      <div class="sub-menu-list">
+                        <ul>
+                          <li class="menu-item">
+                            <a href="index/mapa.html">
+                              <span class="menu-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <span class="menu-title">Mapa de Distribución</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>  
+                  </ul>
+                </div>
+               
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-paw"></i>
+                  </span>
+                  <span class="menu-title">Gestion Fauna</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/registrofauna.html" target="_self">
+                          <span class="menu-icon">
+                              <i class="fas fa-user-plus"></i>
+                          </span>
+                          <span class="menu-title">Registros</span>
+                      </a>
+                    </li> 
+                                
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-leaf"></i>
+                  </span>
+                  <span class="menu-title">Gestion Flora</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/registroflora.html" target="_self">
+                          <span class="menu-icon">
+                              <i class="fas fa-user-plus"></i>
+                          </span>
+                          <span class="menu-title">Registros</span>
+                      </a>
+                    </li>                  
+                    <li class="menu-item">
+                      <a href="index/consultaflora.html">
+                        <span class="menu-icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span class="menu-title">Consultas</span>
+                      </a>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+              <li class="menu-item sub-menu">
+                <a href="index/monitoreo.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="ri-global-fill"></i>
+                  </span>
+                  <span class="menu-title">Monitoreo</span>
+                </a>
+                
+              </li>
+              -->
+              
+
+              <li class="menu-header" style="padding-top: 20px"><span>Otros Socios</span></li>
+                <li class="menu-item">
+                <a href="/pages/programadores.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span class="menu-title">Programadores</span>
+                </a>
+                </li>
+                <li class="menu-item">
+                  <a href="/pages/diseñadores.html" target="_self">
+                    <span class="menu-icon">
+                    <i class="fas fa-paint-brush"></i>
+                    </span>
+                    <span class="menu-title">Diseñadores</span>
+                  </a>
+                </li>
+              <li class="menu-item">
+                <a href="/pages/auditores.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-user-check"></i>
+                  </span>
+                  <span class="menu-title">Auditores</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="/pages/registros.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-receipt"></i>
+                  </span>
+                  <span class="menu-title">Recibos</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="/pages/nuevosistema.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-cogs"></i>
+                  </span>
+                  <span class="menu-title">Nuevo Sistema</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="/pages/sisprocesos.html" target="_self">
+                  <span class="menu-icon">
+                    <i class="fas fa-tools"></i>
+                  </span>
+                  <span class="menu-title">Sistema en proceso</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar-footer">
+          <div class="footer-box">
+            <div>
+              <img src="img/LOG.png"  width="80px" heigth="80px"/>
+            </div>
+            <div style="padding: 0 10px">
+              <span style="display: block; margin-bottom: 10px">Iso perfil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
+    <div>
+        <div class="flex">
+            <!-- Sidebar 
+            <div class="w-1/6 bg-white p-4 border rounded-lg shadow-lg fixed left-0 top-0 h-full">
+                <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+                    COMISIÓN
+                </button>
+            </div>
+            -->
+            <!-- Main Content -->
+        
+            
+                <main class="table" id="customers_table">
+                    <section class="table__header">
+                        <div class="filter-group">
+                            <label for="pais"><strong>País:</strong></label>
+                            <select id="pais" name="pais">
+                              <option value="argentina">Seleccionar</option>
+                              <option value="brasil">Brasil</option>
+                              <option value="chile">Chile</option>
+                              <option value="mexico">México</option>
+                              <option value="peru">Perú</option>
+                              <option value="peru">Colombia</option>
+                              <option value="peru">Bolivia</option>
+                              <option value="peru">Ecuador</option>
+                              <option value="peru">Venezuela</option>
+                              <option value="peru">Otro</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="estado"><strong>Estado:</strong></label>
+                            <select id="estado" name="estado">
+                                <option value="">Seleccionar estado</option>
+                                <option value="cancelado">Cancelado</option>
+                                <option value="comision">Rechazado</option>
+                                <option value="comision">Pendiente</option>
+                                <option value="comision">Aceptado</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                          <label for="tipo-socio"><strong>Tipo de socio:</strong></label>
+                          <select id="tipo-socio" name="tipo-socio">
+                            <option value="">Seleccionar tipo de socio</option>
+                            <option value="analista-financiero">Analista financiero</option>
+                            <option value="abogado">Abogado</option>
+                            <option value="contador">Contador</option>
+                          </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="fecha-desde"><strong>Fecha Ingreso:</strong></label>
+                            <input type="date" id="fecha-desde" name="fecha-desde">
+                        </div>
+                        <div class="input-group">
+                            <input type="search" placeholder="Buscar socio">
+                            <img src="/images/search.png" alt="Search Icon">
+                        </div>
+                        <div class="export__file">
+                            <label for="export-file" class="export__file-btn" title="Export File"></label>
+                            <input type="checkbox" id="export-file">
+                            <div class="export__file-options">
+                                <label>Exportar&nbsp; &#10140;</label>
+                                <label for="export-file" id="toPDF">PDF <img src="/images/pdf.png" alt=""></label>
+                                <label for="export-file" id="toJSON">JSON <img src="/images/json.png" alt=""></label>
+                                <label for="export-file" id="toCSV">CSV <img src="/images/csv.png" alt=""></label>
+                                <label for="export-file" id="toEXCEL">EXCEL <img src="/images/excel.png" alt=""></label>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="table__body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> N° <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> País <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Celular<span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Tipo socio<span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Utilidad<span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Ingreso Utilidad <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Nombre Bco. <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> N° cuenta <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Estado <span class="icon-arrow">&UpArrow;</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ecuador</td>
+                                    <td>Moisés Caicedo</td>
+                                    <td>+5939876541</td>
+                                    <td>Abogado</td>
+                                    <td>35% <button class="edit-button">
+                                      <i class="fas fa-edit"></i>
+                                    </button></td>
+                                    <td>$2000</td>
+                                    <td>Bco. Pichincha</td>
+                                    <td>5455151</td>
+                                    <td><p class="status delivered">activo</p></td>                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>México</td>
+                                  <td>Jorge García</td>
+                                  <td>+56222111221</td>
+                                  <td>Analista financiero</td>>
+                                  <td>35%
+                                    <button class="edit-button">
+                                      <i class="fas fa-edit"></i>
+                                    </button>
+                                  </td>
+                                  <td>$2000</td>
+                                  <td>Bco. Pichincha</td>
+                                    <td>5455151</td>
+                                  <td><p class="status delivered">activo</p></td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>Colombia</td>
+                                  <td>John Anderson</td>
+                                  <td>+68854544545</td>
+                                  <td>Contador</td>>
+                                  <td>35%
+                                    <button class="edit-button">
+                                      <i class="fas fa-edit"></i>
+                                    </button>
+                                  </td>
+                                  <td>$2000</td>
+                                  <td>Bco. Pichincha</td>
+                                    <td>5455151</td>
+                                  <td><p class="status delivered">activo</p></td>                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </main>
+    
+                <style>
+                    .container {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        width: 80%;
+                        max-width: 800px;
+                    }
+                    h2 {
+                        margin-bottom: 20px;
+                    }
+                </style>                
+            </div>
+            <br>
+          <br>
+          <div class="container" style="text-align: center;">
+            <h1><strong>Nuevos Postulantes</strong></h1>
+          </div>
+          <br>
+          <br>
+          <main class="table" id="new_applicants_table">
+            <section class="table__header">
+              <div class="filter-group">
+                <label for="applicant-country"><strong>País:</strong></label>
+                <select id="applicant-country" name="applicant-country">
+                  <option value="argentina">Seleccionar</option>
+                  <option value="brasil">Brasil</option>
+                  <option value="chile">Chile</option>
+                  <option value="mexico">México</option>
+                  <option value="peru">Perú</option>
+                  <option value="colombia">Colombia</option>
+                  <option value="bolivia">Bolivia</option>
+                  <option value="ecuador">Ecuador</option>
+                  <option value="venezuela">Venezuela</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="applicant-status"><strong>Estado:</strong></label>
+                <select id="applicant-status" name="applicant-status">
+                  <option value="">Seleccionar estado</option>
+                  <option value="cancelado">Cancelado</option>
+                  <option value="rechazado">Rechazado</option>
+                  <option value="pendiente">Pendiente</option>
+                  <option value="aceptado">Aceptado</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="application-date"><strong>Fecha de Aplicación:</strong></label>
+                <input type="date" id="application-date" name="application-date">
+              </div>
+              <div class="input-group">
+                <input type="search" placeholder="Buscar postulante">
+                <img src="/images/search.png" alt="Search Icon">
+              </div>
+              <div class="export__file">
+                <label for="export-file-applicants" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file-applicants">
+                <div class="export__file-options">
+                  <label>Exportar&nbsp; &#10140;</label>
+                  <label for="export-file-applicants" id="toPDF">PDF <img src="/images/pdf.png" alt=""></label>
+                  <label for="export-file-applicants" id="toJSON">JSON <img src="/images/json.png" alt=""></label>
+                  <label for="export-file-applicants" id="toCSV">CSV <img src="/images/csv.png" alt=""></label>
+                  <label for="export-file-applicants" id="toEXCEL">EXCEL <img src="/images/excel.png" alt=""></label>
+                </div>
+              </div>
+            </section>
+            <section class="table__body">
+              <table>
+                <thead>
+                  <tr>
+                    <th> N° <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> País <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Celular <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Fecha de Aplicación <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Tipo de Socio <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Años de Experiencia Totales <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> CV <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Aprobar <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Estado <span class="icon-arrow">&UpArrow;</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Colombia</td>
+                    <td>Juan Pérez</td>
+                    <td>+573001234567</td>
+                    <td>2023-10-01</td>
+                    <td>Abogado</td>
+                    <td>10</td>
+                    <td><a href="/cv/juan_perez.pdf" target="_blank">Ver CV</a></td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><p class="status pending">pendiente</p></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Argentina</td>
+                    <td>María García</td>
+                    <td>+541112345678</td>
+                    <td>2023-10-02</td>
+                    <td>Analista finaciero</td>
+                    <td>8</td>
+                    <td><a href="/cv/maria_garcia.pdf" target="_blank">Ver CV</a></td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><p class="status delivered">aprobado</p></td>>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Argentina</td>
+                    <td>Yulexy Banchón</td>
+                    <td>+541112345678</td>
+                    <td>2023-10-02</td>
+                    <td>Contador</td>
+                    <td>8</td>
+                    <td><a href="/cv/maria_garcia.pdf" target="_blank">Ver CV</a></td>
+                    <td>
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td><p class="status delivered">aprobado</p></td>>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <style>
+              .switch {
+                position: relative;
+                display: inline-block;
+                width: 34px;
+                height: 20px;
+              }
+
+              .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                transition: .4s;
+              }
+
+              .slider:before {
+                position: absolute;
+                content: "";
+                height: 12px;
+                width: 12px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                transition: .4s;
+              }
+
+              input:checked + .slider {
+                background-color: #2196F3;
+              }
+
+              input:checked + .slider:before {
+                transform: translateX(14px);
+              }
+
+              .slider.round {
+                border-radius: 34px;
+              }
+
+              .slider.round:before {
+                border-radius: 50%;
+              }
+            </style>
+          </main>
+        </div>
+    </div>
+    <script src="/js/com.js"></script>
+  <!-- partial -->
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+  <!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script><script  src="/js/scriptdash.js"></script>
+
+</body>
+
+</html>

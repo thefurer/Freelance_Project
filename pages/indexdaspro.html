@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Developers</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+  <link rel="stylesheet" href="/css/stylepro.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body>
+    <main>
+      <nav class="main-menu">
+        <h1>Iso and Iso</h1>
+        <img class="logo"
+          src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4cfdcb5a-0137-4457-8be1-6e7bd1f29ebb"
+          alt="" />
+        <ul>
+          <li class="nav-item active">
+            <b></b>
+            <b></b>
+            <a href="#">
+              <i class="fa fa-house nav-icon"></i>
+              <span class="nav-text">Casa</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <b></b>
+            <b></b>
+            <a href="#">
+              <i class="fa fa-user nav-icon"></i>
+              <span class="nav-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <b></b>
+            <b></b>
+            <a href="/pages/comisiones.html">
+              <i class="fa fa-calendar-check nav-icon"></i>
+              <span class="nav-text">Comisiones</span>
+            </a>
+          </li>
+
+          
+
+          <li class="nav-item">
+            <b></b>
+            <b></b>
+            <a href="#">
+              <i class="fa fa-sliders nav-icon"></i>
+              <span class="nav-text">Configuraciones</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <div class="left-content">
+          <div class="activities">
+            <h1>Horas de trabajo programadores</h1>
+            <!--Sección de gráficas estadísticas de ingresos, alineado en una cuadrícula 2x2-->
+            <div class="container">
+              <h2 class="text-left text-xl mb-4">Estadísticas</h2>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4">
+                  <h2 class="text-left text-sm mb-4"><strong>Ingresos</strong></h2>
+                  <canvas id="incomeChart"></canvas>
+                </br>
+                  <h2 class="text-left text-xs mb-4">Utilidad: </h2>
+                    <h2 class="text-left text-sm mb-4">País ranking</h2>
+                  <div class="p-4">
+                    <canvas id="countryRankingChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctxCountryRanking = document.getElementById('countryRankingChart').getContext('2d');
+                    const countryRankingChart = new Chart(ctxCountryRanking, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Brasil', 'México', 'Argentina', 'Colombia', 'Chile', 'Perú', 'Venezuela', 'Ecuador', 'Guatemala', 'Cuba'],
+                        datasets: [{
+                          label: 'Ranking',
+                          data: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+                          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                          borderColor: 'rgba(75, 192, 192, 1)',
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        indexAxis: 'y',
+                        scales: {
+                          x: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                </div>
+                <div class="p-4">
+                  <h2 class="text-left text-sm mb-4"><strong>Clientes</strong></h2>
+                  <canvas id="incomeChartRight"></canvas>
+                </br>
+                <h2 class="text-left text-xs mb-4">Número de clientes </h2>
+                  <h2 class="text-left text-sm mb-4">País ranking</h2>
+                  <div class="p-4">
+                    <canvas id="newCountryRankingChart"></canvas>
+                  </div>
+  
+                  <script>
+                    const ctxNewCountryRanking = document.getElementById('newCountryRankingChart').getContext('2d');
+                    const newCountryRankingChart = new Chart(ctxNewCountryRanking, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Chile', 'Argentina', 'México', 'Brasil', 'Colombia', 'Perú', 'Ecuador', 'Venezuela', 'Guatemala', 'Cuba'],
+                        datasets: [{
+                          label: 'Ranking',
+                          data: [10, 9, 8, 4, 6, 5, 7, 3, 2, 1],
+                          backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                          borderColor: 'rgba(153, 102, 255, 1)',
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        indexAxis: 'y',
+                        scales: {
+                          x: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                </div>
+                <div class="p-4">
+                  <h2 class="text-left text-sm mb-4"><strong>Horas programadas</strong></h2>
+                  <canvas id="incomeChartLeft"></canvas>
+                </br>
+                <h2 class="text-left text-xs mb-4">Programadores</h2>
+                  <h2 class="text-left text-sm mb-4">Ranking programadores</h2>
+                  <div class="p-4">
+                    <canvas id="europeCountryRankingChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctxEuropeCountryRanking = document.getElementById('europeCountryRankingChart').getContext('2d');
+                    const europeCountryRankingChart = new Chart(ctxEuropeCountryRanking, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Abel', 'Ricardo', 'Cristian', 'Manuel', 'Jorge', 'Jessica', 'Erwin', 'Maria', 'Pepe', 'Ariel'],
+                        datasets: [{
+                          label: 'Ranking',
+                          data: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+                          backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                          borderColor: 'rgba(255, 159, 64, 1)',
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        indexAxis: 'y',
+                        scales: {
+                          x: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                </div>
+                <div class="p-4">
+                  <h2 class="text-left text-sm mb-4"><strong>Usuarios</strong></h2>
+                  <canvas id="incomeChartRightAligned"></canvas>
+                </br>
+                <h2 class="text-left text-xs mb-4">Número de usuarios </h2>
+                  <h2 class="text-left text-sm mb-4">País ranking</h2>
+                  <div class="p-4">
+                    <canvas id="newEuropeCountryRankingChart"></canvas>
+                  </div>
+  
+                  <script>
+                    const ctxNewEuropeCountryRanking = document.getElementById('newEuropeCountryRankingChart').getContext('2d');
+                    const newEuropeCountryRankingChart = new Chart(ctxNewEuropeCountryRanking, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Dinamarca', 'Noruega', 'Suecia', 'Suiza', 'Países Bajos', 'España', 'Italia', 'Reino Unido', 'Francia', 'Alemania'],
+                        datasets: [{
+                          label: 'Ranking',
+                          data: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+                          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                          borderColor: 'rgba(255, 99, 132, 1)',
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        indexAxis: 'y',
+                        scales: {
+                          x: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+            
+            
+            <script>
+              const ctx = document.getElementById('incomeChart').getContext('2d');
+              const incomeChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                  labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                  datasets: [{
+                    label: 'Ingresos',
+                    data: [12000, 15000, 8000, 18000, 22000, 20000],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    fill: false,
+                    tension: 0.4
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+              
+            </script>
+            
+
+
+            <script>
+              const ctxRight = document.getElementById('incomeChartRight').getContext('2d');
+              const incomeChartRight = new Chart(ctxRight, {
+                type: 'line',
+                data: {
+                  labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                  datasets: [{
+                    label: 'Ingresos',
+                    data: [12000, 15000, 8000, 18000, 22000, 20000],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    fill: false,
+                    tension: 0.4
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+
+              const ctxLeft = document.getElementById('incomeChartLeft').getContext('2d');
+              const incomeChartLeft = new Chart(ctxLeft, {
+                type: 'line',
+                data: {
+                  labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                  datasets: [{
+                    label: 'Ingresos',
+                    data: [12000, 15000, 8000, 18000, 22000, 20000],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    fill: false,
+                    tension: 0.4
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+              </script>
+
+            <script>
+              const ctxRightAligned = document.getElementById('incomeChartRightAligned').getContext('2d');
+              const incomeChartRightAligned = new Chart(ctxRightAligned, {
+                type: 'line',
+                data: {
+                  labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                  datasets: [{
+                    label: 'Ingresos',
+                    data: [12000, 15000, 8000, 18000, 22000, 20000],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    fill: false,
+                    tension: 0.4
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+
+            
+          </div>
+        </div>
+
+        <div class="right-content">
+          <div class="user-info">
+            <div class="icon-container">
+              <i class="fa fa-bell nav-icon"></i>
+              <i class="fa fa-message nav-icon"></i>
+            </div>
+            <h4>Yulexy Emily</h4>
+            <img
+              src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/40b7cce2-c289-4954-9be0-938479832a9c"
+              alt="user" />
+          </div>
+
+          <div class="active-calories">
+            <h1 style="align-self: flex-start">Productividad</h1>
+            <div class="active-calories-container">
+              <div class="box" style="--i: 85%">
+                <div class="circle">
+                  <h2>85<small>%</small></h2>
+                </div>
+              </div>
+              <div class="calories-content">
+                <p><span>Hrs. trabajo acumuladas:</span> 100 horas</p>
+                <p><span>Hrs. trabjo último mes:</span> 150 horas</p>
+                <p><span>hrs. trabajo promedio por mes:</span> 160 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-personal-bests">
+            <h1>Personal Bests</h1>
+            <div class="personal-bests-container">
+              <div class="best-item box-one">
+                <p>Fastest 5K Run: 22min</p>
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/05dfc444-9ed3-44cc-96af-a9cf195f5820"
+                  alt="" />
+              </div>
+              <div class="best-item box-two">
+                <p>Longest Distance Cycling: 4 miles</p>
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9ca170e9-1252-4fa6-8677-36493540c1f2"
+                  alt="" />
+              </div>
+              <div class="best-item box-three">
+                <p>Longest Roller-Skating: 2 hours</p>
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/262d1611-ed4c-4297-981c-480cf7f95714"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="friends-activity">
+            <h1>Actividad de mis compañeros</h1>
+            <div class="card-container">
+              <div class="card">
+                <div class="card-user-info">
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9290037d-a5b2-4f50-aea3-9f3f2b53b441"
+                    alt="" />
+                  <h2>María</h2>
+                </div>
+                <img class="card-img"
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/bef54506-ea45-4e42-a1b6-23a48f61c5e8"
+                  alt="" />
+                <p>Trabajé por 150 horas en la semana🏃‍♀️🎉</p>
+              </div>
+
+              <div class="card card-two">
+                <div class="card-user-info">
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/42616ef2-ba96-49c7-80ea-c3cf1e2ecc89"
+                    alt="" />
+                  <h2>Andy</h2>
+                </div>
+                <img class="card-img"
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/2dcc1b94-06c5-4c62-b886-53b9e433fd44"
+                  alt="" />
+                <p>Nuevos clientes en nuestra empresa💪</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- partial -->
+  <script src="/js/scriptpro.js"></script>
+
+</body>
+
+</html>
