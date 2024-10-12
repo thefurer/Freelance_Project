@@ -26,14 +26,14 @@
         <div class="sidebar-header">
           <div class="pro-sidebar-logo">
             <div>I</div>
-            <h5>Socio Audi</h5>
+            <h5>Socios abg</h5>
           </div>
         </div>
         <div class="sidebar-content">
           <nav class="menu open-current-submenu">
             <ul>
               <li class="menu-item">
-                <a href="/pages/indexini.html">
+                <a href="/pages/abg/dashboard.html">
                   <span class="menu-icon">
                     <i class="fas fa-globe"></i>
                   </span>
@@ -41,114 +41,10 @@
                 </a>
               </li>
             </ul>
-            <!--
-                  <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="index/flora.html">
-                          <span class="menu-icon">
-                             <i class="fas fa-clipboard-list"></i>
-                          </span>
-                          <span class="menu-title">Flora</span>
-                      </a>
-                    </li> 
-                    <li class="menu-item">
-                      <a href="index/fauna.html">
-                          <span class="menu-icon">
-                             <i class="fas fa-clipboard-list"></i>
-                          </span>
-                          <span class="menu-title">Fauna</span>
-                      </a>
-                    </li>                  
-                    <li class="menu-item sub-menu">
-                      <a href="#">
-                        <span class="menu-icon">
-                          <i class="fas fa-chart-bar"></i>
-                        </span>
-                        <span class="menu-title">Reportes y estadisticas</span>
-                      </a>
-                      <div class="sub-menu-list">
-                        <ul>
-                          <li class="menu-item">
-                            <a href="index/mapa.html">
-                              <span class="menu-icon">
-                                <i class="fas fa-map-marked-alt"></i>
-                              </span>
-                              <span class="menu-title">Mapa de Distribución</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>  
-                  </ul>
-                </div>
-               
-              <li class="menu-item sub-menu">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="fas fa-paw"></i>
-                  </span>
-                  <span class="menu-title">Gestion Fauna</span>
-                </a>
-                <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="index/registrofauna.html" target="_self">
-                          <span class="menu-icon">
-                              <i class="fas fa-user-plus"></i>
-                          </span>
-                          <span class="menu-title">Registros</span>
-                      </a>
-                    </li> 
-                                
-                  </ul>
-                </div>
-              </li>
-              <li class="menu-item sub-menu">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="fas fa-leaf"></i>
-                  </span>
-                  <span class="menu-title">Gestion Flora</span>
-                </a>
-                <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="index/registroflora.html" target="_self">
-                          <span class="menu-icon">
-                              <i class="fas fa-user-plus"></i>
-                          </span>
-                          <span class="menu-title">Registros</span>
-                      </a>
-                    </li>                  
-                    <li class="menu-item">
-                      <a href="index/consultaflora.html">
-                        <span class="menu-icon">
-                          <i class="fas fa-question-circle"></i>
-                        </span>
-                        <span class="menu-title">Consultas</span>
-                      </a>
-                      
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-              <li class="menu-item sub-menu">
-                <a href="index/monitoreo.html" target="_self">
-                  <span class="menu-icon">
-                    <i class="ri-global-fill"></i>
-                  </span>
-                  <span class="menu-title">Monitoreo</span>
-                </a>
-                
-              </li>
-              -->
-              
 
               <li class="menu-header" style="padding-top: 20px"><span>Reportes</span></li>
               <li class="menu-item">
-                <a href="/pages/comisiones.html" target="_self">
+                <a href="/pages/abg/comisiones.html" target="_self">
                   <span class="menu-icon">
                     <i class="fas fa-bullhorn"></i>
                   </span>
@@ -156,7 +52,7 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="/pages/implementacion.html" target="_self">
+                <a href="/pages/abg/implementacion.html" target="_self">
                   <span class="menu-icon">
                     <i class="fas fa-flask"></i>
                   </span>
@@ -164,7 +60,7 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="/pages/audi/home.html" target="_self">
+                <a href="/pages/abg/home.html" target="_self">
                   <span class="menu-icon">
                     <i class="fas fa-user"></i>
                   </span>
@@ -208,29 +104,51 @@
                     <div class="border p-4 rounded-lg w-1/2 shadow-lg">
                         <div class="mb-2">
                             <label class="block text-sm text-gray-700">
-                                RUC ALFANUMÉRICO
-                            </label>
-                            <input class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
-                        </div>
-                        <div class="mb-2">
-                            <label class="block text-sm text-gray-700">
-                                NOMBRE O RAZÓN SOCIAL: TEXTO
-                            </label>
-                            <input class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
-                        </div>
-                        <div class="mb-2">
-                            <label class="block text-sm text-gray-700">
                                 PAÍS
                             </label>
+                            <select class="form-select w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="argentina">Seleccionar</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="mexico">México</option>
+                                <option value="peru">Perú</option>
+                            </select>
+                        </div>
+                        <div class="mb-2">
+                            <label class="block text-sm text-gray-700">
+                                ISO Ejemplo: 45001
+                            </label>
                             <input class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
                         </div>
+                        <div class="mb-2">
+                            <label class="block text-sm text-gray-700">
+                                Otro
+                            </label>
+                            <input class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
+                        </div>
+                        <!--Caja de texto grande para observaciones-->
+                        <div class="mb-2">
+                            <label class="block text-sm text-gray-700">
+                                Observaciones
+                            </label>
+                            <textarea class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <!--Botón para subir archivos pdf, jpg, png-->
+                        <div class="mb-2">
+                            <label class="block text-sm text-gray-700">
+                                Subir archivo
+                            </label>
+                            <input type="file" class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <!--Botón cerrar-->
+                        <button class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600">
+                            CERRAR
+                        </button>
                         <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
                             GUARDAR
                         </button>
+                        
                     </div>
-                    <button class="bg-blue-500 text-white py-2 px-4 rounded-lg h-12 hover:bg-blue-600">
-                        NUEVO CLIENTE
-                    </button>
                 </div>
             </div>
         </div>
@@ -241,7 +159,7 @@
                         <div class="filter-group">
                             <label for="pais"><strong>País:</strong></label>
                             <select id="pais" name="pais">
-                                <option value="">Seleccionar país</option>
+                                <option value="">Seleccionar</option>
                                 <option value="ecuador">Ecuador</option>
                                 <option value="colombia">Colombia</option>
                                 <option value="peru">Perú</option>
@@ -249,11 +167,13 @@
                             </select>
                         </div>
                         <div class="filter-group">
-                            <label for="tipo"><strong>Tipo:</strong></label>
-                            <select id="tipo" name="tipo">
-                                <option value="">Seleccionar tipo</option>
-                                <option value="comprado">Comprado</option>
-                                <option value="comisión">Alquiler</option>
+                            <label for="pais"><strong>Sistema digital</strong></label>
+                            <select id="pais" name="pais">
+                                <option value="">Seleccionar</option>
+                                <option value="ecuador">152300</option>
+                                <option value="colombia">Contabilidad</option>
+                                <option value="peru">Almacén</option>
+                                <option value="chile">21001</option>
                             </select>
                         </div>
                         <div class="filter-group">
@@ -261,16 +181,14 @@
                             <select id="estado" name="estado">
                                 <option value="">Seleccionar estado</option>
                                 <option value="cancelado">Cancelado</option>
-                                <option value="comision">Comisión</option>
+                                <option value="comision">Rechazado</option>
+                                <option value="comision">Pendiente</option>
+                                <option value="comision">Aceptado</option>
                             </select>
                         </div>
                         <div class="filter-group">
-                            <label for="fecha-desde"><strong>Fecha-desde:</strong></label>
+                            <label for="fecha-desde"><strong>Fecha Ingreso:</strong></label>
                             <input type="date" id="fecha-desde" name="fecha-desde">
-                        </div>
-                        <div class="filter-group">
-                            <label for="fecha-hasta"><strong>Fecha-hasta:</strong></label>
-                            <input type="date" id="fecha-hasta" name="fecha-hasta">
                         </div>
 
                         <div class="input-group">
@@ -294,100 +212,74 @@
                             <thead>
                                 <tr>
                                     <th> N° <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> País <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Ruc <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Nombre empresa <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Tipo <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Ingreso <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> % Comisión <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Sistema digital <span class="icon-arrow">&UpArrow;</span></th>
                                     <th> Estado <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Fecha <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Fecha Ingreso<span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> País <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Observaciones <span class="icon-arrow">&UpArrow;</span></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Seoul</td>
-                                    <td>1326252</td>
-                                    <td>claro</td>
-                                    <td><p class="status delivered">comprado</p></td>
-                                    <td>$1000</td>
-                                    <td>10%</td>
+                                    <td>15233</td>
                                     <td><p class="status delivered">cancelado</p></td>
                                     <td><strong>18-09-2024</strong></td>
+                                    <td>Colombia</td>
+                                    <td style="text-align: center;">1</td>
+                                    <!--Botón de editar y eliminar con diseño bootstrap-->
+                                    <td>
+                                        <button class="btn btn-warning btn-sm">Editar</button>
+                                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Kathmandu</td>
-                                    <td>09984151</td>
-                                    <td>movistar</td>
-                                    <td><p class="status delivered">--------</p></td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td><p class="status cancelled">------</p></td>
-                                    <td><strong>-------</strong></td>
+                                    <td>Contabilidad</td>
+                                    <td><p class="status cancelled">Rechazado</p></td>
+                                    <td><strong>18-09-2024</strong></td>
+                                    <td>Perú</td>
+                                    <td style="text-align: center;">2</td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm">Editar</button>
+                                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                                    </td>
+                                    
+                                    
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Tokyo</td>
-                                    <td>21515151</td>
-                                    <td>cnt</td>
-                                    <td><p class="status delivered">alquiler</p></td>
-                                    <td>$1000</td>
-                                    <td>10%</td>
-                                    <td><p class="status shipped">1 comisión</p></td>
+                                    <td>Almacén</td>
+                                    <td><p class="status shipped">Aceptado</p></td>
                                     <td><strong>20-09-2024</strong></td>
+                                    <td>Ecuador</td>
+                                    <td style="text-align: center;">0</td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm">Editar</button>
+                                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                                    </td>
+                                    
+                                   
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Lima</td>
-                                    <td>41511115</td>
-                                    <td>tuenti</td>
-                                    <td><p class="status delivered">comprado</p></td>
-                                    <td>$1000</td>
-                                    <td>30%</td>
+                                    <td>21001</td>
                                     <td><p class="status pending">pendiente</p></td>
                                     <td><strong>21-09-2024</strong></td>
+                                    <td>Argentina</td>
+                                    <td style="text-align: center;">2</td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm">Editar</button>
+                                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                                    </td>
+                                    
+                                    
                                 </tr>
                             </tbody>
                         </table>
                     </section>
                 </main>
-                <!--Sección de gráficas estadísticas de ingresos-->
-                <div class="container">
-                    <h2 class="text-center text-xl mb-4">Ingresos - ganancias de comisiones</h2>
-                    <div class="flex justify-center mb-4">
-                        <div class="w-full p-4">
-                            <canvas id="incomeChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            
-                <script>
-                    const ctx = document.getElementById('incomeChart').getContext('2d');
-                    const incomeChart = new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
-                            datasets: [{
-                                label: 'Ingresos',
-                                data: [12000, 15000, 8000, 18000, 22000, 20000],
-                                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                                borderColor: 'rgba(54, 162, 235, 1)',
-                                borderWidth: 1,
-                                fill: false,
-                                tension: 0.4
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            }
-                        }
-                    });
-                </script>
+    
                 <style>
                     .container {
                         background-color: rgba(255, 255, 255, 0.8);
