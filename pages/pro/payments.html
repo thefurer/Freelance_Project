@@ -144,6 +144,15 @@
 												<input class="form-control" type="text">
 											</div>
 											<div class="form-group label-floating">
+												<label class="control-label"></label>
+												<input class="form-control" type="text" placeholder="Selecciona una ubicación exacta">
+											</div>
+											<div class="map-section">
+												<div class="map-wrapper">
+													<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15906.07358138235!2d-79.897453!3d-2.170998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1710303727470!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+												</div>
+											</div>
+											<div class="form-group label-floating">
 												<label class="control-label">Correo electrónico del familiar</label>
 												<input class="form-control" type="email">
 											</div>
@@ -157,6 +166,10 @@
 													<option>Transferencia bancaria</option>
 													<option>PayPal</option>
 												</select>
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Porcentaje de utilidad a recibir</label>
+												<input class="form-control" type="number" step="0.01" min="0" max="100">
 											</div>
 											<div class="form-group">
 												<label class="control-label">Autorización del familiar (documento adjunto)</label>
@@ -183,6 +196,7 @@
 											<th class="text-center">Relación</th>
 											<th class="text-center">País</th>
 											<th class="text-center">Email</th>
+											<th class="text-center">Porcentaje utilidad</th>
 											<th class="text-center">Teléfono</th>
 											<th class="text-center">Update</th>
 											<th class="text-center">Delete</th>
@@ -195,6 +209,7 @@
 											<td>Hermano</td>
 											<td>El Salvador</td>
 											<td>carlos@gmail.com</td>
+											<td>0.5%</td>
 											<td>+50312345678</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
@@ -205,6 +220,7 @@
 											<td>Esposa</td>
 											<td>El Salvador</td>
 											<td>alicia@gmail.com</td>
+											<td>0.4%</td>
 											<td>+50312345678</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
@@ -215,6 +231,7 @@
 											<td>Hija</td>
 											<td>El Salvador</td>
 											<td>sarai@gmail.com</td>
+											<td>0.2%</td>
 											<td>+50312345678</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
@@ -225,6 +242,7 @@
 											<td>Sobrina</td>
 											<td>El Salvador</td>
 											<td>alba@gmail.com</td>
+											<td>0.1%</td>
 											<td>+50312345678</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
